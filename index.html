@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="weather.css">
+
+</head>
+
+<body style="text-shadow: 0 0 20px black, 0 0 15px #0000FF;">
+
+  <section id="main">
+
+    <div>
+      
+      <h1 id="heading"><u>Weather App</u></h1>
+      <br>
+      <div id="wrap">
+        <div id="search">
+          <input type="text" id="cityName" placeholder="City Name: ">
+          <button onclick="b()" id="searchButton">Search</button>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="content" style="display: none;">
+    <div id="align">
+
+    <div>
+
+      <h1 id="header"></h1>
+      <br>
+      <p id="times">Last Updated:<span id="time"></span></p>
+
+    </div>
+
+    <div id="icon"></div>
+
+    <div>
+      <br>
+      <p id="heat">
+
+        <span id="temp"></span>
+        <input type="button" id="tempF" value="|°F"">
+
+      </p>
+
+      <br>
+      <br>
+      <br>
+      <p id="weather_discription">
+
+        <span id="weather"></span>
+        <span id="discp"></span>
+
+      </p>
+
+      <p>Humidity:<span id="humidity"></span></p>
+
+      <p>Visibility:<span id="visibility"></span></p>
+
+      <p>Pressure:<span id="pressure"></span></p>
+
+      <p>Wind:<span id="wind"></span></p>
+
+    </div>
+    
+    <footer>
+
+      <p id="dates">Date:<span id="date"></span></p>
+      <p id="message">Data is Updated Every Minutes</p>
+  
+    </footer>
+    </div>
+
+  </section>
+
+  <script src="weather.js"></script>
+
+</body>
+
+</html>
